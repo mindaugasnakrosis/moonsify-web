@@ -1,13 +1,21 @@
-# Solid
+# moonsify.com
 
-A landing page template.
+Landing page for **Moonsify** — natural sleep patches for adults (melatonin, magnesium, valerian root & hops).
 
-* [Getting started](#getting-started)
+## Stack
 
-## Getting started
-* First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
-* This template requires Node 14 to work. You can handle multiple node versions with [NVM](https://github.com/nvm-sh/nvm) 
-* Next, use your command line to enter your project directory.
-* This template comes with a ready-to-use package file called `package-sample.json`. You just need to rename it to `package.json`, then run `npm install` to install all of the dependencies into your project.
+Plain static HTML/CSS, no build step, no JavaScript. Deployed via **GitHub Pages** from the `main` branch, served at [moonsify.com](https://moonsify.com).
 
-You're ready to go! Run any task by typing `npm run task` (where "task" is the name of the task in the `"scripts"` object). The most useful task for rapid development is `watch`. It will start a new server, open up a browser and watch for any SCSS or JS changes in the `src` directory; once it compiles those changes, the browser will automatically inject the changed file(s)!
+## Structure
+
+- `index.html` — the landing page (all CSS inlined, JSON-LD Product + FAQ structured data)
+- `images/` — web-optimized product photos
+- `CNAME` — custom domain for GitHub Pages
+- `robots.txt` / `sitemap.xml` — SEO
+- `404.html` — custom not-found page
+
+## Editing
+
+Edit `index.html` directly and push to `main` — GitHub Pages redeploys automatically.
+
+Remember to update the **Amazon listing URL** (search for `amazon.com/dp/`) once the product is live.

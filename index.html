@@ -1,217 +1,625 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>restify</title>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <title>Moonsify Sleep Patches for Adults | Extra Strength Natural Sleep Aid</title>
+    <meta name="description" content="Moonsify sleep patches for adults combine melatonin, magnesium & valerian root for deep, restorative sleep. A natural, drug-free sleep aid — 30 patches, 1-month supply.">
+    <link rel="canonical" href="https://moonsify.com/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moonsify.com/">
+    <meta property="og:site_name" content="Moonsify">
+    <meta property="og:title" content="Moonsify Sleep Patches for Adults | Extra Strength Natural Sleep Aid">
+    <meta property="og:description" content="Melatonin, magnesium & valerian root in one easy overnight patch. Fall asleep faster, sleep deeper, wake up refreshed — without pills or grogginess.">
+    <meta property="og:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Moonsify Sleep Patches for Adults | Extra Strength Natural Sleep Aid">
+    <meta name="twitter:description" content="Melatonin, magnesium & valerian root in one easy overnight patch. Fall asleep faster, sleep deeper, wake up refreshed.">
+    <meta name="twitter:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
+
+    <link rel="preload" as="image" href="images/moonsify-sleep-patches.jpg" imagesrcset="images/moonsify-sleep-patches-640.jpg 640w, images/moonsify-sleep-patches.jpg 1200w">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured data: Product -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Moonsify Sleep Patches for Adults — Extra Strength",
+      "image": "https://moonsify.com/images/moonsify-sleep-patches.jpg",
+      "description": "Extra strength sleep patches for adults with melatonin (7 mg), magnesium malate, hops and valerian root. A natural, drug-free sleep aid that supports deep, restorative sleep. 30 patches — one month supply.",
+      "brand": { "@type": "Brand", "name": "Moonsify" },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://moonsify.com/",
+        "priceCurrency": "USD",
+        "price": "25.95",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+    </script>
+
+    <!-- Structured data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do Moonsify sleep patches work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Apply one patch to clean, dry skin about 30 minutes before bed. Through the night the patch delivers a steady, controlled release of melatonin, magnesium, hops and valerian root through the skin — helping you fall asleep faster and stay asleep longer, without swallowing pills." }
+        },
+        {
+          "@type": "Question",
+          "name": "What ingredients are in Moonsify sleep patches?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each patch contains Melatonin 7 mg, Magnesium Malate 41.32 mg, Valerian Root 27 mg and Hops 16.53 mg — natural ingredients known for their sleep-supportive and relaxing properties. The patches are 100% drug-free." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will sleep patches make me groggy in the morning?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Unlike many traditional sleep aids, Moonsify patches release their ingredients gradually overnight, so most users wake up feeling clear-headed, refreshed and energized rather than groggy." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are sleep patches better than melatonin pills?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Patches deliver active ingredients steadily through the skin over the whole night instead of one spike from a pill. They are mess-free, require no water or swallowing, and avoid the digestive system entirely — a convenient option for anyone who dislikes pills." }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I apply a sleep patch?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Apply one patch to a clean, dry, relatively hair-free area of skin (upper arm, shoulder or wrist work well) roughly 30 minutes before bedtime. Remove it in the morning and discard." }
+        },
+        {
+          "@type": "Question",
+          "name": "How many patches are in one pack?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each pack contains 30 sleep patches — a full one-month supply for consistent, better sleep." }
+        },
+        {
+          "@type": "Question",
+          "name": "Who are Moonsify sleep patches for?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Moonsify patches are formulated for adults dealing with occasional sleeplessness, insomnia troubles, stress, jet lag or irregular schedules — including shift workers, frequent travelers and busy parents. Not intended for children. If you are pregnant, nursing or taking medication, consult your doctor before use." }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --navy-950: #070b1f;
+            --navy-900: #0a102c;
+            --navy-800: #121a3f;
+            --navy-700: #1c2650;
+            --ink: #eef1fb;
+            --ink-soft: #b8c0dd;
+            --gold: #e9c97e;
+            --gold-strong: #f3d68b;
+            --blue: #6f9bff;
+            --radius: 16px;
+            --maxw: 1080px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+            background: var(--navy-950);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: var(--gold); }
+        .container { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+        /* Header */
+        .site-header {
+            position: sticky; top: 0; z-index: 50;
+            background: rgba(7, 11, 31, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .site-header .container {
+            display: flex; align-items: center; justify-content: space-between;
+            padding-top: 14px; padding-bottom: 14px;
+        }
+        .logo {
+            font-size: 1.5rem; font-weight: 700; color: var(--ink);
+            text-decoration: none; letter-spacing: 0.5px;
+        }
+        .logo .moon { color: var(--gold); }
+        .main-nav { display: flex; gap: 26px; align-items: center; flex-wrap: wrap; }
+        .main-nav a {
+            color: var(--ink-soft); text-decoration: none; font-size: 0.9rem; font-weight: 500;
+        }
+        .main-nav a:hover { color: var(--ink); }
+        .nav-cta {
+            background: var(--gold); color: var(--navy-950) !important;
+            padding: 8px 18px; border-radius: 999px; font-weight: 600 !important;
+        }
+        .nav-cta:hover { background: var(--gold-strong); }
+        @media (max-width: 720px) { .main-nav a:not(.nav-cta) { display: none; } }
+
+        /* Hero */
+        .hero {
+            background:
+                radial-gradient(1200px 600px at 80% -10%, rgba(111,155,255,0.18), transparent 60%),
+                radial-gradient(900px 500px at 10% 110%, rgba(233,201,126,0.10), transparent 60%),
+                var(--navy-950);
+            padding: 72px 0 80px;
+            overflow: hidden;
+        }
+        .hero-grid {
+            display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center;
+        }
+        @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+        .eyebrow {
+            display: inline-block; font-size: 0.8rem; font-weight: 600; letter-spacing: 2px;
+            text-transform: uppercase; color: var(--gold); margin-bottom: 18px;
+        }
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; font-weight: 700;
+            margin-bottom: 20px;
+        }
+        h1 .accent { color: var(--gold); }
+        .hero-sub { font-size: 1.1rem; color: var(--ink-soft); max-width: 34em; margin-bottom: 30px; }
+        .cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 34px; }
+        .btn {
+            display: inline-block; padding: 14px 30px; border-radius: 999px;
+            font-weight: 600; text-decoration: none; font-size: 1rem;
+            transition: transform 0.15s ease, background 0.15s ease;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background: var(--gold); color: var(--navy-950); }
+        .btn-primary:hover { background: var(--gold-strong); }
+        .btn-ghost { border: 1.5px solid rgba(255,255,255,0.25); color: var(--ink); }
+        .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+        .hero-badges { display: flex; gap: 22px; flex-wrap: wrap; }
+        .hero-badges span { font-size: 0.85rem; color: var(--ink-soft); }
+        .hero-badges b { color: var(--ink); }
+        .hero-img {
+            border-radius: var(--radius);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+        }
+
+        /* Sections */
+        section { padding: 76px 0; }
+        .section-alt { background: var(--navy-900); }
+        h2 {
+            font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700;
+            margin-bottom: 14px; line-height: 1.25;
+        }
+        .section-lead { color: var(--ink-soft); max-width: 44em; margin-bottom: 44px; }
+        .center { text-align: center; }
+        .center .section-lead { margin-left: auto; margin-right: auto; }
+
+        /* Benefits */
+        .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        @media (max-width: 860px) { .card-grid { grid-template-columns: 1fr; } }
+        .card {
+            background: var(--navy-800); border: 1px solid rgba(255,255,255,0.06);
+            border-radius: var(--radius); padding: 28px;
+        }
+        .card .icon { font-size: 1.6rem; margin-bottom: 12px; }
+        .card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; }
+        .card p { font-size: 0.92rem; color: var(--ink-soft); }
+
+        /* Ingredients */
+        .ingredients-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        @media (max-width: 860px) { .ingredients-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .ingredients-grid { grid-template-columns: 1fr; } }
+        .ingredient {
+            background: var(--navy-800); border: 1px solid rgba(255,255,255,0.06);
+            border-radius: var(--radius); padding: 26px; text-align: center;
+        }
+        .ingredient .dose { color: var(--gold); font-weight: 700; font-size: 1.3rem; }
+        .ingredient h3 { font-size: 1rem; margin: 6px 0 10px; }
+        .ingredient p { font-size: 0.88rem; color: var(--ink-soft); }
+
+        /* Steps */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: step; }
+        @media (max-width: 860px) { .steps { grid-template-columns: 1fr; } }
+        .step {
+            background: var(--navy-800); border-radius: var(--radius); padding: 30px;
+            border: 1px solid rgba(255,255,255,0.06); position: relative;
+        }
+        .step .num {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 40px; height: 40px; border-radius: 50%;
+            background: var(--gold); color: var(--navy-950); font-weight: 700;
+            margin-bottom: 16px; font-size: 1.1rem;
+        }
+        .step h3 { font-size: 1.05rem; margin-bottom: 8px; }
+        .step p { font-size: 0.92rem; color: var(--ink-soft); }
+
+        /* Comparison */
+        .compare-wrap { overflow-x: auto; }
+        .compare {
+            width: 100%; border-collapse: collapse; min-width: 560px;
+            background: var(--navy-800); border-radius: var(--radius); overflow: hidden;
+        }
+        .compare th, .compare td {
+            padding: 16px 20px; text-align: left; font-size: 0.93rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .compare th { background: var(--navy-700); font-weight: 600; }
+        .compare th:first-child { width: 40%; }
+        .compare td.yes { color: var(--gold-strong); font-weight: 600; }
+        .compare td.no { color: var(--ink-soft); }
+        .compare tr:last-child td { border-bottom: none; }
+
+        /* Who it's for */
+        .audience { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        @media (max-width: 860px) { .audience { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .audience { grid-template-columns: 1fr; } }
+
+        /* Pricing */
+        .price-card {
+            max-width: 460px; margin: 0 auto; text-align: center;
+            background: linear-gradient(180deg, var(--navy-700), var(--navy-800));
+            border: 1px solid rgba(233,201,126,0.35);
+            border-radius: 20px; padding: 44px 36px;
+        }
+        .price { font-size: 3rem; font-weight: 700; color: var(--gold); }
+        .price small { font-size: 1rem; color: var(--ink-soft); font-weight: 400; }
+        .price-features { list-style: none; margin: 24px 0 30px; }
+        .price-features li { padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 0.95rem; }
+        .price-features li:last-child { border-bottom: none; }
+
+        /* FAQ */
+        .faq { max-width: 780px; margin: 0 auto; }
+        .faq details {
+            background: var(--navy-800); border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px; margin-bottom: 12px; padding: 4px 22px;
+        }
+        .faq summary {
+            cursor: pointer; font-weight: 600; padding: 16px 0; font-size: 0.98rem;
+            list-style: none; position: relative; padding-right: 30px;
+        }
+        .faq summary::-webkit-details-marker { display: none; }
+        .faq summary::after {
+            content: '+'; position: absolute; right: 2px; top: 50%;
+            transform: translateY(-50%); color: var(--gold); font-size: 1.4rem; font-weight: 400;
+        }
+        .faq details[open] summary::after { content: '–'; }
+        .faq details p { padding: 0 0 18px; color: var(--ink-soft); font-size: 0.93rem; }
+
+        /* Final CTA */
+        .final-cta {
+            background:
+                radial-gradient(800px 400px at 50% -20%, rgba(233,201,126,0.12), transparent 60%),
+                var(--navy-900);
+            text-align: center;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--navy-950); border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 44px 0 30px; font-size: 0.85rem; color: var(--ink-soft);
+        }
+        .footer-grid { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; margin-bottom: 28px; }
+        .footer-links { list-style: none; display: flex; gap: 24px; flex-wrap: wrap; }
+        .footer-links a { color: var(--ink-soft); text-decoration: none; }
+        .footer-links a:hover { color: var(--ink); }
+        .disclaimer {
+            font-size: 0.75rem; color: #6b7397; border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 20px; line-height: 1.6;
+        }
+    </style>
 </head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-							<a href="#">
-								<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </header>
+<body>
 
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-inner">
-						<div class="hero-copy">
-	                        <h1 style="letter-spacing:2px;font-size:65px" class="hero-title mt-0">restify</h1>
-	                        <p class="hero-paragraph">Dream Big, Rest Easy. We've got you covered.</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Try Restify now!</a><a class="button" href="mailto:support@restifyhealth.com">Get in touch</a></div>
-						</div>
-						<div class="hero-figure anime-element">
-							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
-								<rect width="528" height="396" style="fill:transparent;" />
-							</svg>
-							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
-							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
-							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
-							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
-							<div class="hero-figure-box hero-figure-box-05"></div>
-							<div class="hero-figure-box hero-figure-box-06"></div>
-							<div class="hero-figure-box hero-figure-box-07"></div>
-                            <img style="position:absolute;top:0px;right:0px;height:530px" src="restify-bag.jpg" />
-						</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="features section">
-                <div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-                        <div class="features-wrap">
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/feature-icon-01.svg" alt="Feature 01">
-                                    </div>
-                                    <h4 class="feature-title mt-24">🌙 Deep, Restorative Sleep</h4>
-                                    <p class="text-sm mb-0">Formulated with melatonin, magnesium, and valerian root, Restify patches help you fall asleep faster and stay asleep longer, promoting a truly restful night.</p>
-                                </div>
-                            </div>
-							<div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/feature-icon-02.svg" alt="Feature 02">
-                                    </div>
-                                    <h4 class="feature-title mt-24">💤 Gentle, Natural Relaxation</h4>
-                                    <p class="text-sm mb-0">Infused with hops and valerian root, Restify provides a non-invasive, pill-free solution that encourages relaxation without harsh chemicals or unwanted side effects.</p>
-                                </div>
-                            </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/feature-icon-03.svg" alt="Feature 03">
-                                    </div>
-                                    <h4 class="feature-title mt-24">✨ Simple & Mess-Free</h4>
-                                    <p class="text-sm mb-0">Apply to clean, dry skin before bed—no pills, no mixing, no hassle. The patch works overnight, delivering a steady release of ingredients while you sleep.</p>
-                                </div>
-                            </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/feature-icon-04.svg" alt="Feature 04">
-                                    </div>
-                                    <h4 class="feature-title mt-24">⏳ Supports a Healthy Sleep Cycle</h4>
-                                    <p class="text-sm mb-0">Designed to help regulate your natural sleep-wake rhythm, making it easier to drift off, stay asleep, and wake up feeling refreshed.</p>
-                                </div>
-                            </div>
-							<div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/feature-icon-05.svg" alt="Feature 05">
-                                    </div>
-                                    <h4 class="feature-title mt-24">🌅 Wake Up Energized</h4>
-                                    <p class="text-sm mb-0">Unlike traditional sleep aids that leave you groggy, Restify helps you rise feeling clear-headed and ready to take on your day.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="pricing section">
-                <div class="container-sm">
-                    <div class="pricing-inner section-inner">
-                        <div class="pricing-header text-center">
-                            <h2 class="section-title mt-0">Better sleep starts tonight</h2>
-                            <p class="section-paragraph mb-0">Give your body the rest it deserves—sleep deeper, wake up stronger, and embrace each day with renewed energy.</p>
-                        </div>
-						<div class="pricing-tables-wrap">
-                            <div class="pricing-table">
-                                <div class="pricing-table-inner is-revealing">
-                                    <div class="pricing-table-main">
-                                        <div class="pricing-table-header pb-24">
-                                            <div class="pricing-table-price"><span class="pricing-table-price-currency h2">$</span><span class="pricing-table-price-amount h1">25.95</span><span class="text-xs">/pack</span></div>
-                                        </div>
-										<div class="pricing-table-features-title text-xs pt-24 pb-24">What you will get</div>
-                                        <ul class="pricing-table-features list-reset text-xs">
-                                            <li>
-                                                <span>30 Patches - 1 Month Supply</span>
-                                            </li>
-                                            <li>
-                                                <span>Premium Quality</span>
-                                            </li>
-                                            <li>
-                                                <span>All-Natural Sleep Support</span>
-                                            </li>
-											<li>
-												<span>Deep & Restorative Rest</span>
-											</li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-table-cta mb-8">
-                                        <a class="button button-primary button-shadow button-block" href="#">Try Restify now!</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-			<section class="cta section">
-				<div class="container">
-					<div class="cta-inner section-inner">
-						<h3 class="section-title mt-0">Still not convinced on buying?</h3>
-						<div class="cta-cta">
-							<a class="button button-primary button-wide-mobile" href="mailto:support@restifyhealth.com">Get in touch</a>
-						</div>
-					</div>
-				</div>
-			</section>
-        </main>
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="site-footer-inner">
-                    <div class="brand footer-brand">
-						<a href="#">
-							<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
-						</a>
-                    </div>
-                    <ul class="footer-links list-reset">
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-social-links list-reset">
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Facebook</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#0270D7"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Twitter</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#0270D7"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Google</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#0270D7"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="footer-copyright">&copy; 2025 restify, all rights reserved</div>
-                </div>
-            </div>
-        </footer>
+<header class="site-header">
+    <div class="container">
+        <a class="logo" href="#" aria-label="Moonsify home"><span class="moon">☾</span> moonsify</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#benefits">Benefits</a>
+            <a href="#ingredients">Ingredients</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#faq">FAQ</a>
+            <a class="nav-cta" href="#buy">Buy Now</a>
+        </nav>
     </div>
+</header>
 
-    <script src="dist/js/main.min.js"></script>
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <span class="eyebrow">Extra Strength · 100% Drug-Free</span>
+                <h1>Sleep Patches for Adults, for <span class="accent">Deep, Restorative Sleep</span></h1>
+                <p class="hero-sub">Moonsify sleep patches combine <strong>melatonin, magnesium and valerian root</strong> in one easy overnight patch — a natural sleep aid that helps you fall asleep faster, stay asleep longer and wake up refreshed. No pills. No grogginess.</p>
+                <div class="cta-row">
+                    <a class="btn btn-primary" href="https://www.amazon.com/dp/PLACEHOLDER" rel="noopener">Buy on Amazon</a>
+                    <a class="btn btn-ghost" href="#how-it-works">How it works</a>
+                </div>
+                <div class="hero-badges">
+                    <span>🌙 <b>30 patches</b> — 1-month supply</span>
+                    <span>🌿 <b>Natural</b> ingredients</span>
+                    <span>💊 <b>Pill-free</b> &amp; mess-free</span>
+                </div>
+            </div>
+            <div>
+                <img class="hero-img" src="images/moonsify-sleep-patches.jpg"
+                     srcset="images/moonsify-sleep-patches-640.jpg 640w, images/moonsify-sleep-patches.jpg 1200w"
+                     sizes="(max-width: 860px) 90vw, 45vw"
+                     width="1200" height="1102"
+                     alt="Moonsify extra strength sleep patches for adults — pack of 30 natural sleep aid patches with melatonin"
+                     fetchpriority="high">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="section-alt">
+        <div class="container">
+            <h2>A Natural Sleep Aid That Works While You Rest</h2>
+            <p class="section-lead">Formulated for adults who struggle with falling asleep, staying asleep or waking up exhausted — Moonsify supports better sleep the natural way.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="icon">🌙</div>
+                    <h3>Powerful Sleep Support</h3>
+                    <p>Packed with melatonin, magnesium and valerian root, Moonsify sleep patches for adults support restorative, deep sleep and help improve sleep quality night after night.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌿</div>
+                    <h3>All-Natural Relaxation</h3>
+                    <p>Made with hops and valerian root, these natural sleep aids for adults deliver gentle relaxation to ease you into sleep — without pills or harsh chemicals.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">✨</div>
+                    <h3>Simple &amp; Convenient</h3>
+                    <p>Apply the sleep patch to clean, dry skin before bed and let it work overnight. A mess-free solution for better sleep with no complicated routines.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">⏳</div>
+                    <h3>Targets Insomnia &amp; Sleep Troubles</h3>
+                    <p>Formulated with melatonin and magnesium to support insomnia relief and a more consistent sleep cycle, so you enjoy deeper, more restorative rest.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌅</div>
+                    <h3>Wake Up Refreshed</h3>
+                    <p>A steady overnight release means you wake clear-headed and energized — without the grogginess of traditional sleep aids.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🧳</div>
+                    <h3>Perfect for Travel &amp; Shift Work</h3>
+                    <p>Jet lag, night shifts, changing schedules — discreet, easy-to-pack patches help you keep a healthy sleep rhythm wherever life takes you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="ingredients">
+        <div class="container">
+            <h2>What's Inside Every Moonsify Sleep Patch</h2>
+            <p class="section-lead">Four sleep-supportive ingredients in carefully balanced doses, released steadily through the skin while you sleep.</p>
+            <div class="ingredients-grid">
+                <div class="ingredient">
+                    <div class="dose">7 mg</div>
+                    <h3>Melatonin</h3>
+                    <p>Helps regulate your natural sleep-wake cycle so you fall asleep faster and stay asleep longer.</p>
+                </div>
+                <div class="ingredient">
+                    <div class="dose">41.32 mg</div>
+                    <h3>Magnesium Malate</h3>
+                    <p>Promotes relaxation and supports sleep quality by easing muscle tension and stress.</p>
+                </div>
+                <div class="ingredient">
+                    <div class="dose">27 mg</div>
+                    <h3>Valerian Root</h3>
+                    <p>A traditional herbal remedy known to enhance deep, restorative sleep and ease insomnia symptoms.</p>
+                </div>
+                <div class="ingredient">
+                    <div class="dose">16.53 mg</div>
+                    <h3>Hops</h3>
+                    <p>Naturally calming botanical that helps the body unwind and prepare for rest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="section-alt">
+        <div class="container">
+            <h2>How Moonsify Sleep Patches Work</h2>
+            <p class="section-lead">Three simple steps to better sleep — no water, no pills, no fuss.</p>
+            <div class="steps">
+                <div class="step">
+                    <span class="num">1</span>
+                    <h3>Apply Before Bed</h3>
+                    <p>Stick one patch on clean, dry skin — upper arm, shoulder or wrist — about 30 minutes before bedtime.</p>
+                </div>
+                <div class="step">
+                    <span class="num">2</span>
+                    <h3>Sleep Deeply All Night</h3>
+                    <p>The patch releases melatonin, magnesium, hops and valerian root gradually through the night for steady, uninterrupted rest.</p>
+                </div>
+                <div class="step">
+                    <span class="num">3</span>
+                    <h3>Wake Up Energized</h3>
+                    <p>Peel off the patch in the morning and start your day clear-headed, refreshed and ready — no sleep-aid hangover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section>
+        <div class="container">
+            <h2>Why a Sleep Patch Instead of Pills?</h2>
+            <p class="section-lead">Patches deliver active ingredients directly through the skin in a slow, controlled release — instead of one short spike from a pill or gummy.</p>
+            <div class="compare-wrap">
+                <table class="compare">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Moonsify Patch</th>
+                            <th scope="col">Pills &amp; Gummies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">All-night steady release</th>
+                            <td class="yes">✓ Yes</td>
+                            <td class="no">✗ Single dose spike</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nothing to swallow or digest</th>
+                            <td class="yes">✓ Yes</td>
+                            <td class="no">✗ Requires ingestion</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">No added sugar or fillers</th>
+                            <td class="yes">✓ Yes</td>
+                            <td class="no">✗ Often added</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wake-up grogginess</th>
+                            <td class="yes">✓ Minimal</td>
+                            <td class="no">✗ Common complaint</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Travel-friendly &amp; discreet</th>
+                            <td class="yes">✓ Yes</td>
+                            <td class="no">— Varies</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience -->
+    <section class="section-alt">
+        <div class="container">
+            <h2>Made for Every Kind of Tired</h2>
+            <p class="section-lead">Whether it's occasional sleeplessness or a schedule that fights your body clock, Moonsify helps adults get the rest they deserve.</p>
+            <div class="audience">
+                <div class="card">
+                    <div class="icon">💼</div>
+                    <h3>Busy Professionals</h3>
+                    <p>Quiet a racing mind after long days and switch off for real, restorative rest.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">✈️</div>
+                    <h3>Frequent Travelers</h3>
+                    <p>Beat jet lag and reset your sleep-wake cycle across time zones.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌃</div>
+                    <h3>Shift Workers</h3>
+                    <p>Support consistent, quality sleep even when your schedule keeps changing.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">👨‍👩‍👧</div>
+                    <h3>Busy Parents</h3>
+                    <p>Make the sleep you do get count — fall asleep faster and rest deeper.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Buy -->
+    <section id="buy">
+        <div class="container center">
+            <h2>Better Sleep Starts Tonight</h2>
+            <p class="section-lead">One pack. One month. A full 30 nights of deeper, more restorative sleep.</p>
+            <div class="price-card">
+                <div class="price">$25.95 <small>/ pack</small></div>
+                <ul class="price-features">
+                    <li>🌙 30 patches — full 1-month supply</li>
+                    <li>🌿 Melatonin, magnesium, valerian root &amp; hops</li>
+                    <li>💊 100% drug-free, pill-free sleep support</li>
+                    <li>✨ Premium quality, easy overnight application</li>
+                </ul>
+                <a class="btn btn-primary" href="https://www.amazon.com/dp/PLACEHOLDER" rel="noopener">Buy on Amazon</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-alt">
+        <div class="container">
+            <div class="center">
+                <h2>Sleep Patch Questions, Answered</h2>
+                <p class="section-lead">Everything you need to know about Moonsify sleep patches for adults.</p>
+            </div>
+            <div class="faq">
+                <details>
+                    <summary>How do Moonsify sleep patches work?</summary>
+                    <p>Apply one patch to clean, dry skin about 30 minutes before bed. Through the night the patch delivers a steady, controlled release of melatonin, magnesium, hops and valerian root through the skin — helping you fall asleep faster and stay asleep longer, without swallowing pills.</p>
+                </details>
+                <details>
+                    <summary>What ingredients are in Moonsify sleep patches?</summary>
+                    <p>Each patch contains Melatonin 7 mg, Magnesium Malate 41.32 mg, Valerian Root 27 mg and Hops 16.53 mg — natural ingredients known for their sleep-supportive and relaxing properties. The patches are 100% drug-free.</p>
+                </details>
+                <details>
+                    <summary>Will sleep patches make me groggy in the morning?</summary>
+                    <p>Unlike many traditional sleep aids, Moonsify patches release their ingredients gradually overnight, so most users wake up feeling clear-headed, refreshed and energized rather than groggy.</p>
+                </details>
+                <details>
+                    <summary>Are sleep patches better than melatonin pills?</summary>
+                    <p>Patches deliver active ingredients steadily through the skin over the whole night instead of one spike from a pill. They're mess-free, require no water or swallowing, and avoid the digestive system entirely — a convenient option for anyone who dislikes pills.</p>
+                </details>
+                <details>
+                    <summary>When should I apply a sleep patch?</summary>
+                    <p>Apply one patch to a clean, dry, relatively hair-free area of skin (upper arm, shoulder or wrist work well) roughly 30 minutes before bedtime. Remove it in the morning and discard.</p>
+                </details>
+                <details>
+                    <summary>How many patches are in one pack?</summary>
+                    <p>Each pack contains 30 sleep patches — a full one-month supply for consistent, better sleep.</p>
+                </details>
+                <details>
+                    <summary>Who are Moonsify sleep patches for?</summary>
+                    <p>Moonsify patches are formulated for adults dealing with occasional sleeplessness, insomnia troubles, stress, jet lag or irregular schedules — including shift workers, frequent travelers and busy parents. Not intended for children. If you are pregnant, nursing or taking medication, consult your doctor before use.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>The Rest You Deserve Is One Patch Away</h2>
+            <p class="section-lead" style="margin-left:auto;margin-right:auto;">Say goodbye to sleepless nights. Stick on a Moonsify patch tonight and wake up to a better morning.</p>
+            <div class="cta-row" style="justify-content:center;">
+                <a class="btn btn-primary" href="https://www.amazon.com/dp/PLACEHOLDER" rel="noopener">Buy on Amazon</a>
+                <a class="btn btn-ghost" href="mailto:support@moonsify.com">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a class="logo" href="#" style="font-size:1.2rem;"><span class="moon">☾</span> moonsify</a>
+                <p style="margin-top:8px; max-width:32em;">Natural sleep patches for adults — melatonin, magnesium, valerian root and hops for deep, restorative sleep.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="mailto:support@moonsify.com">Contact</a></li>
+            </ul>
+        </div>
+        <p class="disclaimer">
+            *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your physician before use if you are pregnant, nursing, taking medication, or have a medical condition. For adults only — keep out of reach of children.
+        </p>
+        <p style="margin-top:14px;">&copy; 2026 Moonsify. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
