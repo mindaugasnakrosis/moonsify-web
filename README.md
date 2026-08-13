@@ -1,21 +1,20 @@
 # moonsify.com
 
-Landing page for **Moonsify** — natural sleep patches for adults (melatonin, magnesium, valerian root & hops).
+Landing page and SEO blog for **Moonsify** — natural sleep patches for adults (melatonin, magnesium, valerian root & hops).
 
 ## Stack
 
-Plain static HTML/CSS, no build step, no JavaScript. Deployed via **GitHub Pages** from the `main` branch, served at [moonsify.com](https://moonsify.com).
+Plain static HTML/CSS, no build step, no JavaScript. Deployed via **GitHub Pages** from the `main` branch, served at [moonsify.com](https://moonsify.com). Pushing to `main` deploys automatically.
 
 ## Structure
 
-- `index.html` — the landing page (all CSS inlined, JSON-LD Product + FAQ structured data)
+- `index.html` — the landing page (all CSS inlined; Product, FAQ and Organization structured data)
+- `blog/` — six research-backed articles + index, sharing `blog/blog.css`
 - `images/` — web-optimized product photos
 - `CNAME` — custom domain for GitHub Pages
 - `robots.txt` / `sitemap.xml` — SEO
 - `404.html` — custom not-found page
 
-## Editing
+## Working on this repo
 
-Edit `index.html` directly and push to `main` — GitHub Pages redeploys automatically.
-
-Remember to update the **Amazon listing URL** (search for `amazon.com/dp/`) once the product is live.
+See **CLAUDE.md** for operational details: deploy verification, git remote gotchas, content/compliance rules, and the current TODO list (including the Amazon listing URL placeholder — grep for `PLACEHOLDER`).
