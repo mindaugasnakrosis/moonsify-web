@@ -47,6 +47,31 @@
     }
     </script>
 
+    <!-- Structured data: Organization + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://moonsify.com/#organization",
+          "name": "Moonsify",
+          "url": "https://moonsify.com/",
+          "logo": "https://moonsify.com/favicon.svg",
+          "email": "support@moonsify.com",
+          "description": "Moonsify makes natural sleep patches for adults — melatonin, magnesium, valerian root and hops in one easy overnight patch."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://moonsify.com/#website",
+          "name": "Moonsify",
+          "url": "https://moonsify.com/",
+          "publisher": { "@id": "https://moonsify.com/#organization" }
+        }
+      ]
+    }
+    </script>
+
     <!-- Structured data: FAQ -->
     <script type="application/ld+json">
     {
