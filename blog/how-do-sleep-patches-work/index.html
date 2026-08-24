@@ -14,9 +14,9 @@
     <meta property="og:description" content="How transdermal patches deliver melatonin, magnesium and valerian root through the skin overnight — and how to apply one correctly.">
     <meta property="og:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/blog/blog.css">
     <script type="application/ld+json">
     {
@@ -118,7 +118,11 @@
         <p>Moonsify patches are 100% drug-free and contain ingredients with long histories of use. That said, they're formulated for adults: they're not intended for children, and if you're pregnant, nursing, taking medication, or managing a health condition, check with your doctor before use — the same advice that applies to any melatonin or herbal supplement. If sleeplessness is persistent, talk to a healthcare provider, since ongoing insomnia can have underlying causes worth addressing.</p>
 
         <div class="cta-card">
-            <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify extra strength sleep patches for adults, 30-patch pack" loading="lazy">
+            <picture>
+                <source type="image/webp" srcset="/images/moonsify-sleep-patches-640.webp">
+                <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify extra strength sleep patches for adults, 30-patch pack"
+                     width="640" height="587" loading="lazy" decoding="async">
+            </picture>
             <div>
                 <h3>Try Moonsify Sleep Patches</h3>
                 <p>Melatonin, magnesium, valerian root &amp; hops in one easy overnight patch. 30 patches — a full month of better sleep.</p>

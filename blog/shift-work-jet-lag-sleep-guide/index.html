@@ -14,9 +14,9 @@
     <meta property="og:description" content="Practical strategies for beating jet lag, sleeping after night shifts, and using light and melatonin to reset your body clock.">
     <meta property="og:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/blog/blog.css">
     <script type="application/ld+json">
     {
@@ -120,7 +120,11 @@
         <p>If you consistently can't sleep even when your schedule allows it, fall asleep uncontrollably at work or behind the wheel, or feel unrefreshed for weeks, talk to a doctor. Shift work sleep disorder and sleep apnea are common, real and treatable — and no supplement is the right answer to them.</p>
 
         <div class="cta-card">
-            <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify sleep patches — travel-friendly natural sleep aid for shift workers and travelers" loading="lazy">
+            <picture>
+                <source type="image/webp" srcset="/images/moonsify-sleep-patches-640.webp">
+                <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify sleep patches — travel-friendly natural sleep aid for shift workers and travelers"
+                     width="640" height="587" loading="lazy" decoding="async">
+            </picture>
             <div>
                 <h3>Sleep support that travels with you</h3>
                 <p>Flat, discreet, no water needed. Melatonin, magnesium, valerian root &amp; hops, released steadily through the night — on whatever schedule life gives you.</p>

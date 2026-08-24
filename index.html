@@ -22,10 +22,12 @@
     <meta name="twitter:description" content="Melatonin, magnesium & valerian root in one easy overnight patch. Fall asleep faster, sleep deeper, wake up refreshed.">
     <meta name="twitter:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
 
-    <link rel="preload" as="image" href="images/moonsify-sleep-patches.jpg" imagesrcset="images/moonsify-sleep-patches-640.jpg 640w, images/moonsify-sleep-patches.jpg 1200w">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" type="image/webp" href="images/moonsify-sleep-patches.webp"
+          imagesrcset="images/moonsify-sleep-patches-640.webp 640w, images/moonsify-sleep-patches-900.webp 900w, images/moonsify-sleep-patches.webp 1200w"
+          imagesizes="(max-width: 860px) calc(100vw - 48px), (max-width: 1080px) calc((100vw - 96px) * 0.45), 443px">
+    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Structured data: Product -->
     <script type="application/ld+json">
@@ -153,6 +155,38 @@
     </script>
 
     <style>
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/fonts/poppins-400.woff2') format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url('/fonts/poppins-500.woff2') format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: url('/fonts/poppins-600.woff2') format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('/fonts/poppins-700.woff2') format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
         :root {
             --navy-950: #070b1f;
             --navy-900: #0a102c;
@@ -176,6 +210,7 @@
             font-size: 16px;
         }
         img { max-width: 100%; height: auto; display: block; }
+        picture { display: block; }
         a { color: var(--gold); }
         .container { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
@@ -320,6 +355,20 @@
         @media (max-width: 860px) { .audience { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 520px) { .audience { grid-template-columns: 1fr; } }
 
+        /* Blog teasers */
+        .post-teasers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        @media (max-width: 860px) { .post-teasers { grid-template-columns: 1fr; } }
+        .post-teaser {
+            display: flex; flex-direction: column; text-decoration: none; color: inherit;
+            background: var(--navy-800); border: 1px solid rgba(255,255,255,0.06);
+            border-radius: var(--radius); padding: 26px;
+            transition: border-color .2s ease, transform .2s ease;
+        }
+        .post-teaser:hover { border-color: rgba(233,201,126,0.35); transform: translateY(-2px); }
+        .post-teaser h3 { font-size: 1.02rem; font-weight: 600; margin-bottom: 8px; line-height: 1.35; }
+        .post-teaser p { font-size: 0.9rem; color: var(--ink-soft); }
+        .post-teaser .read-more { margin-top: auto; padding-top: 14px; color: var(--gold); font-size: 0.88rem; font-weight: 600; }
+
         /* Pricing */
         .price-card {
             max-width: 460px; margin: 0 auto; text-align: center;
@@ -369,7 +418,7 @@
         .footer-links a { color: var(--ink-soft); text-decoration: none; }
         .footer-links a:hover { color: var(--ink); }
         .disclaimer {
-            font-size: 0.75rem; color: #6b7397; border-top: 1px solid rgba(255,255,255,0.06);
+            font-size: 0.75rem; color: #7a83a8; border-top: 1px solid rgba(255,255,255,0.06);
             padding-top: 20px; line-height: 1.6;
         }
     </style>
@@ -378,7 +427,7 @@
 
 <header class="site-header">
     <div class="container">
-        <a class="logo" href="#" aria-label="Moonsify home"><span class="moon">☾</span> moonsify</a>
+        <a class="logo" href="/" aria-label="Moonsify home"><span class="moon">☾</span> moonsify</a>
         <nav class="main-nav" aria-label="Main navigation">
             <a href="#benefits">Benefits</a>
             <a href="#ingredients">Ingredients</a>
@@ -409,12 +458,17 @@
                 </div>
             </div>
             <div>
-                <img class="hero-img" src="images/moonsify-sleep-patches.jpg"
-                     srcset="images/moonsify-sleep-patches-640.jpg 640w, images/moonsify-sleep-patches.jpg 1200w"
-                     sizes="(max-width: 860px) 90vw, 45vw"
-                     width="1200" height="1102"
-                     alt="Moonsify extra strength sleep patches for adults — pack of 30 natural sleep aid patches with melatonin"
-                     fetchpriority="high">
+                <picture>
+                    <source type="image/webp"
+                            srcset="images/moonsify-sleep-patches-640.webp 640w, images/moonsify-sleep-patches-900.webp 900w, images/moonsify-sleep-patches.webp 1200w"
+                            sizes="(max-width: 860px) calc(100vw - 48px), (max-width: 1080px) calc((100vw - 96px) * 0.45), 443px">
+                    <img class="hero-img" src="images/moonsify-sleep-patches.jpg"
+                         srcset="images/moonsify-sleep-patches-640.jpg 640w, images/moonsify-sleep-patches-900.jpg 900w, images/moonsify-sleep-patches.jpg 1200w"
+                         sizes="(max-width: 860px) calc(100vw - 48px), (max-width: 1080px) calc((100vw - 96px) * 0.45), 443px"
+                         width="1200" height="1102"
+                         alt="Moonsify extra strength sleep patches for adults — pack of 30 natural sleep aid patches with melatonin"
+                         fetchpriority="high">
+                </picture>
             </div>
         </div>
     </section>
@@ -648,6 +702,49 @@
         </div>
     </section>
 
+    <!-- Blog -->
+    <section id="blog">
+        <div class="container">
+            <div class="center">
+                <h2>Learn What Actually Helps You Sleep</h2>
+                <p class="section-lead">Research-backed guides from the Moonsify blog on melatonin dosage, magnesium, valerian root and the schedules that fight your body clock.</p>
+            </div>
+            <div class="post-teasers">
+                <a class="post-teaser" href="/blog/how-do-sleep-patches-work/">
+                    <h3>How Do Sleep Patches Work? Transdermal Sleep Support, Explained</h3>
+                    <p>What transdermal delivery means, why slow release matters for staying asleep, and how to apply a patch correctly.</p>
+                    <span class="read-more">Read the guide &rsaquo;</span>
+                </a>
+                <a class="post-teaser" href="/blog/sleep-patches-vs-melatonin-pills/">
+                    <h3>Sleep Patches vs. Melatonin Pills &amp; Gummies: Which Is Right for You?</h3>
+                    <p>Release profiles, sugar content, bioavailability and convenience — an honest comparison of every melatonin format.</p>
+                    <span class="read-more">Read the guide &rsaquo;</span>
+                </a>
+                <a class="post-teaser" href="/blog/how-much-melatonin-should-i-take/">
+                    <h3>Is 7 mg of Melatonin Right for You? A Practical Dosage Guide</h3>
+                    <p>What research says about melatonin dosage, why the label number isn't what your body gets, and how timing changes everything.</p>
+                    <span class="read-more">Read the guide &rsaquo;</span>
+                </a>
+                <a class="post-teaser" href="/blog/valerian-root-and-hops-for-sleep/">
+                    <h3>Valerian Root &amp; Hops for Sleep: What the Research Says</h3>
+                    <p>Two herbs, centuries of use, and a surprising amount of modern evidence — including why they're so often paired.</p>
+                    <span class="read-more">Read the guide &rsaquo;</span>
+                </a>
+                <a class="post-teaser" href="/blog/magnesium-and-sleep/">
+                    <h3>Magnesium and Sleep: What the Science Shows</h3>
+                    <p>How a mineral affects GABA, muscle tension and stress — and why so many adults quietly run a deficit.</p>
+                    <span class="read-more">Read the guide &rsaquo;</span>
+                </a>
+                <a class="post-teaser" href="/blog/shift-work-jet-lag-sleep-guide/">
+                    <h3>The Shift Worker's &amp; Traveler's Guide to Better Sleep</h3>
+                    <p>Beating jet lag, sleeping after night shifts, and using light — the master lever — to reset your body clock.</p>
+                    <span class="read-more">Read the guide &rsaquo;</span>
+                </a>
+            </div>
+            <p class="center" style="margin-top:32px;"><a class="btn btn-ghost" href="/blog/">Read all sleep guides</a></p>
+        </div>
+    </section>
+
     <!-- Final CTA -->
     <section class="final-cta">
         <div class="container">
@@ -665,7 +762,7 @@
     <div class="container">
         <div class="footer-grid">
             <div>
-                <a class="logo" href="#" style="font-size:1.2rem;"><span class="moon">☾</span> moonsify</a>
+                <a class="logo" href="/" style="font-size:1.2rem;"><span class="moon">☾</span> moonsify</a>
                 <p style="margin-top:8px; max-width:32em;">Natural sleep patches for adults — melatonin, magnesium, valerian root and hops for deep, restorative sleep.</p>
             </div>
             <ul class="footer-links">

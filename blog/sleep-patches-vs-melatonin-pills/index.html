@@ -14,9 +14,9 @@
     <meta property="og:description" content="How patches, pills and gummies differ in melatonin delivery, release speed, sugar content and convenience — and who each format suits best.">
     <meta property="og:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/blog/blog.css">
     <style>
         .vs-table-wrap { overflow-x: auto; margin: 24px 0; }
@@ -129,7 +129,11 @@
         <p>Whichever format you pick, pair it with the basics — consistent bedtime, dark cool room, no screens in bed. No supplement outruns a bad sleep environment.</p>
 
         <div class="cta-card">
-            <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify extra strength sleep patches for adults, 30-patch pack" loading="lazy">
+            <picture>
+                <source type="image/webp" srcset="/images/moonsify-sleep-patches-640.webp">
+                <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify extra strength sleep patches for adults, 30-patch pack"
+                     width="640" height="587" loading="lazy" decoding="async">
+            </picture>
             <div>
                 <h3>Skip the pills. Wear your sleep support.</h3>
                 <p>Moonsify combines melatonin, magnesium, valerian root &amp; hops in one steady-release overnight patch. 30 patches per pack.</p>

@@ -14,9 +14,9 @@
     <meta property="og:description" content="What modern research says about valerian root and hops — how they work, why they're often paired, and what to know about safety.">
     <meta property="og:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/blog/blog.css">
     <script type="application/ld+json">
     {
@@ -103,7 +103,11 @@
         <p>Each Moonsify patch includes valerian root (27 mg) and hops (16.53 mg) alongside <a href="/blog/how-much-melatonin-should-i-take/">7 mg of melatonin</a> and <a href="/blog/magnesium-and-sleep/">magnesium malate</a>. The idea is layered support: melatonin signals your body clock that it's night, while valerian, hops and magnesium ease the physical and mental tension that keeps you surfaced. Delivered <a href="/blog/how-do-sleep-patches-work/">transdermally</a>, the blend releases gradually across the night rather than all at once at bedtime.</p>
 
         <div class="cta-card">
-            <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify sleep patches with valerian root, hops, melatonin and magnesium" loading="lazy">
+            <picture>
+                <source type="image/webp" srcset="/images/moonsify-sleep-patches-640.webp">
+                <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify sleep patches with valerian root, hops, melatonin and magnesium"
+                     width="640" height="587" loading="lazy" decoding="async">
+            </picture>
             <div>
                 <h3>Centuries of herbal wisdom, one modern patch</h3>
                 <p>Valerian root, hops, melatonin &amp; magnesium — released steadily while you sleep. 30 patches per pack.</p>

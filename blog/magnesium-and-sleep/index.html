@@ -14,9 +14,9 @@
     <meta property="og:description" content="What research shows about magnesium for relaxation, muscle tension and sleep quality — plus why many adults don't get enough.">
     <meta property="og:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/blog/blog.css">
     <script type="application/ld+json">
     {
@@ -106,7 +106,11 @@
         </ul>
 
         <div class="cta-card">
-            <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify sleep patches with magnesium malate, melatonin, valerian root and hops" loading="lazy">
+            <picture>
+                <source type="image/webp" srcset="/images/moonsify-sleep-patches-640.webp">
+                <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify sleep patches with magnesium malate, melatonin, valerian root and hops"
+                     width="640" height="587" loading="lazy" decoding="async">
+            </picture>
             <div>
                 <h3>Relax your body. Quiet your mind.</h3>
                 <p>Magnesium malate, melatonin, valerian root &amp; hops — steadily released while you sleep. 30 patches per pack.</p>

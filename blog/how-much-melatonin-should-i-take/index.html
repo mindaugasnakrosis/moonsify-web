@@ -14,9 +14,9 @@
     <meta property="og:description" content="What research says about melatonin dosage for adults — low vs. high doses, timing, and why the delivery method matters as much as the number.">
     <meta property="og:image" content="https://moonsify.com/images/moonsify-sleep-patches.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/blog/blog.css">
     <script type="application/ld+json">
     {
@@ -108,7 +108,11 @@
         <p>Melatonin has a good safety profile in adults, but talk to a healthcare provider before use if you're pregnant or nursing, take blood thinners, immunosuppressants, diabetes or blood-pressure medication, or manage a seizure disorder. Melatonin supplements are not recommended for children except under medical guidance. And if sleeplessness persists for weeks despite good habits, see a professional — chronic insomnia deserves proper evaluation, not just higher doses.</p>
 
         <div class="cta-card">
-            <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify extra strength sleep patches for adults with 7 mg melatonin" loading="lazy">
+            <picture>
+                <source type="image/webp" srcset="/images/moonsify-sleep-patches-640.webp">
+                <img src="/images/moonsify-sleep-patches-640.jpg" alt="Moonsify extra strength sleep patches for adults with 7 mg melatonin"
+                     width="640" height="587" loading="lazy" decoding="async">
+            </picture>
             <div>
                 <h3>7 mg melatonin, released the smart way</h3>
                 <p>Moonsify patches deliver melatonin steadily through the night, alongside magnesium, valerian root &amp; hops. 30 patches per pack.</p>
